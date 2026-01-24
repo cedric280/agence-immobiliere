@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobilier Plus - Votre Agence de Confiance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-home"></i> Immobilier Plus</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#biens" class="nav-link">Nos Biens</a>
+                <a href="#apropos" class="nav-link">À Propos</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Trouvez Votre Maison de Rêve</h1>
+            <p>Avec plus de 15 ans d'expérience, nous vous accompagnons dans tous vos projets immobiliers</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Voir nos biens</button>
+                <button class="btn btn-secondary">Nous contacter</button>
+            </div>
+        </div>
+        <div class="hero-search">
+            <div class="search-form">
+                <h3>Rechercher un bien</h3>
+                <form id="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="type-bien">
+                                <option value="">Type de bien</option>
+                                <option value="appartement">Appartement</option>
+                                <option value="maison">Maison</option>
+                                <option value="terrain">Terrain</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="ville" placeholder="Ville">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" id="prix-min" placeholder="Prix min">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="prix-max" placeholder="Prix max">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-search">
+                        <i class="fas fa-search"></i> Rechercher
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Vente</h3>
+                    <p>Nous vous accompagnons dans la vente de votre bien avec une estimation gratuite et un suivi personnalisé.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Trouvez le bien locatif idéal ou confiez-nous la gestion de votre patrimoine immobilier.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Estimation</h3>
+                    <p>Obtenez une estimation précise et gratuite de votre bien immobilier par nos experts.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Conseil</h3>
+                    <p>Bénéficiez de nos conseils d'experts pour tous vos projets d'investissement immobilier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biens Section -->
+    <section id="biens" class="properties">
+        <div class="container">
+            <h2 class="section-title">Nos Biens Sélectionnés</h2>
+            <div class="properties-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="vente">Vente</button>
+                <button class="filter-btn" data-filter="location">Location</button>
+            </div>
+            <div class="properties-grid" id="properties-grid">
+                <!-- Les biens seront générés dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Biens Vendus</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Clients Satisfaits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Années d'Expérience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% de Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de Notre Agence</h2>
+                    <p>Depuis plus de 15 ans, <strong>Immobilier Plus</strong> vous accompagne dans tous vos projets immobiliers. Notre équipe d'experts passionnés met tout en œuvre pour vous offrir un service de qualité et personnalisé.</p>
+                    <p>Que vous souhaitiez acheter, vendre, louer ou investir, nous vous guidons à chaque étape de votre projet avec professionnalisme et transparence.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Expertise reconnue</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Équipe dédiée</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Disponibilité 7j/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Notre équipe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-Nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>123 Avenue des Champs<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>01 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contact@immobilierplus.fr</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horaires</h4>
+                            <p>Lun-Ven: 9h-19h<br>Sam: 9h-17h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telephone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="sujet" required>
+                                <option value="">Sujet de votre demande</option>
+                                <option value="vente">Vendre un bien</option>
+                                <option value="achat">Acheter un bien</option>
+                                <option value="location">Location</option>
+                                <option value="estimation">Estimation gratuite</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-home"></i> Immobilier Plus</h3>
+                    <p>Votre partenaire de confiance pour tous vos projets immobiliers depuis 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Vente immobilière</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Estimation gratuite</a></li>
+                        <li><a href="#">Gestion locative</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Zones d'intervention</h4>
+                    <ul>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Banlieue parisienne</a></li>
+                        <li><a href="#">Île-de-France</a></li>
+                        <li><a href="#">Autres régions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 01 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@immobilierplus.fr</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue des Champs, Paris</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Immobilier Plus. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
