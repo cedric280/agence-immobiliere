@@ -265,7 +265,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ---
 
 <p align="center">
-  Fait avec ❤️ en France
+  Fait avec ❤️ au Burkina Faso
 </p>
 
 <p align="center">
